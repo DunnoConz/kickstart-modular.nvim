@@ -10,5 +10,8 @@ return {
 	},
 	config = function()
 		require("neo-tree").setup {}
+
+		vim.keymap.set('n', '<leader>,', '<Cmd>Neotree focus<CR>')
+		vim.keymap.set('n', '<leader>.', '<Cmd>Neotree toggle<CR>')
 	end
 }
